@@ -51,7 +51,7 @@ table {
 body {
     font-family:'Roboto', sans-serif;
     font-weight: 300;
-    font-size:.8em;
+    font-size:14px;
     line-height: 2em;
 }
 h1,h2,h3,h4,h5,h6 {
@@ -60,42 +60,69 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-    font-size:.8em;
+    font-size:14px;
     line-height: 2em;
 }
 
 h1 {
-    font-size:2em;
+    font-size:1.5em;
 }
 
 h2 {
     font-size:1.5em;
 }
 
-#main-container {
-    display: flex;
-}
-
-#nav {
-    background:rgb(182, 73, 102);
-    width:20%;
+#pk-container-nav {
+    background:#eeeeee;
+    color:#888888;
+    width:25%;
     position: fixed;
-    height: 100%;
-    padding:20px;
-    color:#ffffff;
-    box-sizing:border-box;
+    top:0;
+    bottom:0;
+    z-index: 999;
+    overflow: scroll;
 }
 
-#main-content {
-    width: 80%;
-    margin-left:20%;
+#menu-open {
+    position: absolute;
+    right:10px;
+    top:20px;
+    font-size:1.75em;
+}
+
+#pk-container-nav a {
+    color:#ffffff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#pk-nav {
+    background:rgb(84, 157, 157);
+    padding:20px 20px 5px 20px;
+    color:#ffffff;
+    position: fixed;
+    width:25%;
+    box-sizing:border-box;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.menu {
+    max-height: 1px;
+}
+
+#pk-container-main {
+    width:75%;
+    margin-left:25%;
     box-sizing:border-box;
     position: relative;
-    display: flex;
 }
 
-.exercise-container {
-    padding:20px 20px;
+#text-editor {
+    padding:20px;
+    margin-top:60px;
+    position: absolute;
 }
 
 #game-console {
@@ -103,8 +130,8 @@ h2 {
     justify-content: center;
     border:2px solid #aaaaaa;
     position: relative;
-    min-height: 300px;
-    max-height: 400px;
+    min-height: 200px;
+    max-height: 300px;
     flex-wrap: wrap;
     overflow: scroll;
 }
@@ -115,18 +142,27 @@ h2 {
     background:#cccccc;
 }
 
-#game-text {
+#exercise-text {
     display: flex;
-    flex-basis: 50%;
-    z-index: 100;
 }
 
-.code-text {
-    background:#eeeeee;
-    color:#888888;
-    padding:20px 20px;
-    width:350px;
-    box-sizing: border-box;
+#exercise-lesson {
+    width:50%;
+    padding:20px;
+}
+
+#exercise-questions {
+    width:50%;
+    padding:20px;
+}
+
+#exercise-instructions {
+    list-style:decimal;
+}
+
+#exercise-instructions li {
+    margin-bottom:20px;
+    line-height: 1.2em;
 }
 
 .code-text textarea {
@@ -136,27 +172,35 @@ h2 {
 
 #game-container {
     width:80%;
-    height:300px;
+    height:200px;
     background:#eeeeee;
 }
 
 .game-block {
     display: inline-block;
-    width:100px;
+    min-width:100px;
     height: 100px;
     max-width: 33.33%;
     transition: all .1s ease-out;
 }
 
 #game-block-red {
-    background:red;
-    position: relative;
+    background:url('../img/owl-red.png'), red;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
 }
 
 #game-block-blue {
-    background:blue;
+    background:url('../img/owl-blue.png'),blue;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
 }
 
 #game-block-green {
-    background:green;
+    background:url('../img/owl-green.png'), green;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
 }
