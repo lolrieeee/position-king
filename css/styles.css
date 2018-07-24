@@ -1,0 +1,160 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CUSTOM */
+body {
+    font-family:'Roboto', sans-serif;
+    font-weight: 300;
+    font-size:.8em;
+    line-height: 2em;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+    font-size:.8em;
+    line-height: 2em;
+}
+
+h1 {
+    font-size:2em;
+}
+
+h2 {
+    font-size:1.5em;
+}
+
+#main-container {
+    display: flex;
+}
+
+#nav {
+    background:rgb(182, 73, 102);
+    width:20%;
+    position: fixed;
+    height: 100%;
+    padding:20px;
+    color:#ffffff;
+    box-sizing:border-box;
+}
+
+#main-content {
+    width: 80%;
+    margin-left:20%;
+    box-sizing:border-box;
+    position: relative;
+    display: flex;
+}
+
+.exercise-container {
+    padding:20px 20px;
+}
+
+#game-console {
+    display: flex;
+    justify-content: center;
+    border:2px solid #aaaaaa;
+    position: relative;
+    max-height: 400px;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+.game-overflow {
+    width:100%;
+    padding:20px;
+    background:#cccccc;
+}
+
+#game-text {
+    display: flex;
+    flex-basis: 50%;
+    z-index: 100;
+}
+
+.code-text {
+    background:#eeeeee;
+    color:#888888;
+    padding:20px 20px;
+    width:350px;
+    box-sizing: border-box;
+}
+
+.code-text textarea {
+    width: 100%;
+    resize: none;
+}
+
+#game-container {
+    width:80%;
+    height:300px;
+    background:#eeeeee;
+}
+
+.game-block {
+    display: inline-block;
+    width:100px;
+    height: 100px;
+    transition: all .1s ease-out;
+}
+
+#game-block-red {
+    background:red;
+    position: relative;
+}
+
+#game-block-blue {
+    background:blue;
+}
+
+#game-block-green {
+    background:green;
+}
