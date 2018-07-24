@@ -103,6 +103,7 @@ h2 {
     justify-content: center;
     border:2px solid #aaaaaa;
     position: relative;
+    min-height: 300px;
     max-height: 400px;
     flex-wrap: wrap;
     overflow: scroll;
@@ -143,6 +144,7 @@ h2 {
     display: inline-block;
     width:100px;
     height: 100px;
+    max-width: 33.33%;
     transition: all .1s ease-out;
 }
 
