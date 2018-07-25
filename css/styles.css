@@ -83,11 +83,15 @@ h2 {
     overflow: scroll;
 }
 
-#menu-open {
+#menu-open,#menu-close {
     position: absolute;
     right:10px;
     top:20px;
     font-size:1.75em;
+}
+
+.hide-this {
+    display: none;
 }
 
 #pk-container-nav a {
@@ -110,6 +114,12 @@ h2 {
 
 .menu {
     max-height: 1px;
+    transition: all .25s ease-out;
+    min-height:1px;
+}
+
+.menu.open-menu {
+    max-height: 9999px;
 }
 
 #pk-container-main {
@@ -123,6 +133,8 @@ h2 {
     padding:20px;
     margin-top:60px;
     position: absolute;
+    box-sizing: border-box;
+    width:100%;
 }
 
 #game-console {
@@ -163,6 +175,10 @@ h2 {
 #exercise-instructions li {
     margin-bottom:20px;
     line-height: 1.2em;
+}
+
+.code-text {
+    width:100%;
 }
 
 .code-text textarea {

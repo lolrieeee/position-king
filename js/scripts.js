@@ -1,3 +1,15 @@
+$('#menu-open').click(function(){
+    $(this).toggleClass('hide-this');
+    $('#menu-close').toggleClass('hide-this');
+    $('.menu').toggleClass('open-menu');
+});
+
+$('#menu-close').click(function(){
+    $(this).toggleClass('hide-this');
+    $('#menu-open').toggleClass('hide-this');
+    $('.menu').toggleClass('open-menu');
+});
+
 $('#code-game-container').on('blur', function(){
     $('#game-container').attr('style', $('#code-game-container').val());
 });
