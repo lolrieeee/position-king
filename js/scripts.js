@@ -10,8 +10,8 @@ $('#menu-close').click(function(){
     $('.menu').toggleClass('open-menu');
 });
 
-$('#code-game-container').on('blur', function(){
-    $('#game-container').attr('style', $('#code-game-container').val());
+$('#code-game-grey').on('blur', function(){
+    $('#game-block-grey').attr('style', $('#code-game-grey').val());
 });
 
 $('#code-game-red').on('blur', function(){

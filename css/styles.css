@@ -152,6 +152,7 @@ h2 {
     width:100%;
     padding:20px;
     background:#cccccc;
+    height:100%;
 }
 
 #exercise-text {
@@ -186,18 +187,19 @@ h2 {
     resize: none;
 }
 
-#game-container {
+#game-block-grey {
     width:80%;
     height:200px;
     background:#eeeeee;
+    opacity:.9;
 }
 
 .game-block {
     display: inline-block;
     min-width:100px;
-    height: 100px;
-    max-width: 33.33%;
+    min-height: 100px;
     transition: all .1s ease-out;
+    opacity:.9;
 }
 
 #game-block-red {
