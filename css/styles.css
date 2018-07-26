@@ -72,6 +72,10 @@ h2 {
     font-size:1.5em;
 }
 
+#main-container {
+    min-height: 900px;
+}
+
 #pk-container-nav {
     background:#eeeeee;
     color:#888888;
@@ -221,4 +225,12 @@ h2 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60%;
+}
+
+/* FOOTER */
+.footer-section {
+    background:#000000;
+    padding:20px;
+    position: relative;
+    z-index: 999;
 }
